@@ -1,2 +1,2 @@
 # spring-intermediate
-Creating a command line application covering the basics of Hibernate/JPA 
+Creating a Spring Command Line Application covering the basics of Hibernate/JPA. 
