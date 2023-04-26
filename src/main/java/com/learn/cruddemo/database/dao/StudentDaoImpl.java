@@ -1,7 +1,6 @@
-package com.learn.cruddemo.dao;
+package com.learn.cruddemo.database.dao;
 
-import com.learn.cruddemo.dao.StudentDao;
-import com.learn.cruddemo.entity.Student;
+import com.learn.cruddemo.database.entity.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;

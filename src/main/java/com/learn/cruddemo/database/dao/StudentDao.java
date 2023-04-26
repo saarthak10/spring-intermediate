@@ -1,6 +1,6 @@
-package com.learn.cruddemo.dao;
+package com.learn.cruddemo.database.dao;
 
-import com.learn.cruddemo.entity.Student;
+import com.learn.cruddemo.database.entity.Student;
 
 import java.util.List;
 

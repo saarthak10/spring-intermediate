@@ -1,4 +1,4 @@
-package com.learn.cruddemo.entity;
+package com.learn.cruddemo.database.entity;
 
 import jakarta.persistence.*;
 

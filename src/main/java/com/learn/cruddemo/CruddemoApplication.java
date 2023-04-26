@@ -1,7 +1,7 @@
 package com.learn.cruddemo;
 
-import com.learn.cruddemo.entity.Student;
-import com.learn.cruddemo.dao.StudentDao;
+import com.learn.cruddemo.database.entity.Student;
+import com.learn.cruddemo.database.dao.StudentDao;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +16,8 @@ public class CruddemoApplication {
         SpringApplication.run(CruddemoApplication.class, args);
     }
 
-    @Bean
+    //Bean for handling database crud operations
+   /* @Bean
     public CommandLineRunner commandLineRunner(StudentDao studentDao) {
         return runner -> {
             System.out.println("Hello world");
@@ -26,7 +27,7 @@ public class CruddemoApplication {
             //updateSingleStudent(studentDao);
             deleteStudent(studentDao);
         };
-    }
+    }*/
 
     private void deleteStudent(StudentDao studentDao) {
         int id = 2;
