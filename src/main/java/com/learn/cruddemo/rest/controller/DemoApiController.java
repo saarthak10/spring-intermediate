@@ -47,7 +47,13 @@ public class DemoApiController {
         return students.get(studentId);
     }
 
-    // exception handler for handling student id not found
+    /**
+     * These exception handlers are only limited to this controller ,
+     * thus we need to create a global exception handler using @ControllerAdvice annotation
+     * @param exc
+     * @return
+     */
+  /*  // exception handler for handling student id not found
     @ExceptionHandler
     public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException exc){
             StudentErrorResponse error = new StudentErrorResponse();
@@ -56,9 +62,10 @@ public class DemoApiController {
             error.setTimestamp(System.currentTimeMillis());
 
             return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
-    }
+    }*/
 
-    //another exception handler for catching all other exception
+    //another exception handler for catching all other exceptions
+   /* @ExceptionHandler
     public ResponseEntity<StudentErrorResponse> handleException(Exception exc) {
         StudentErrorResponse error = new StudentErrorResponse();
         error.setStatus(HttpStatus.BAD_REQUEST.value());
@@ -66,6 +73,6 @@ public class DemoApiController {
         error.setTimestamp(System.currentTimeMillis());
 
         return new ResponseEntity<>(error,HttpStatus.BAD_REQUEST);
-    }
+    }*/
 
 }
